@@ -207,16 +207,22 @@ nav{
 .main{
     padding-top: 80px;
     /* height: 1150px; */
-    
+   
     margin-top: 100px;
     overflow-y: auto;
     display: flex;
     
     align-items: center;
     justify-content: center;
-    height: auto;
+    /* height: auto; */
+    border: 1px solid black;
 }
+.sub{
+    height: 800px;
+}
+
 .main-container{
+    height: 90%;
     width: 90%;
     display: grid; 
     grid-template-columns: repeat(5,1fr);
@@ -275,7 +281,7 @@ h2{
 }
 .top-half{
     height: 50%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(175, 172, 172);
     display: flex;
     justify-content: center;
     
@@ -369,7 +375,7 @@ h2{
    
 }
 .jar{
-    border-bottom: 1px solid rgb(125, 124, 124);
+    border-bottom: 1px solid rgb(179, 177, 177);
     flex: 1;
     display:flex;
     justify-content: left;
@@ -484,14 +490,28 @@ h2{
     .main-container{
       
         grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,31%);
         gap: 5px;
         
     }
     .share{
         margin-left: 16%;
     }
+    .sub{
+        height: 1200px;
+    }
 }
 @media(max-width:1310px){
+    .main{
+        height: 1300px;
+    }
+    .main-container{
+      
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,30%);
+        gap: 5px;
+        
+    }
     
 }
 
