@@ -84,12 +84,14 @@ nav{
     flex: 1.5;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    white-space: nowrap;
 
 }
 .box2 p{
     font-size: 15px;
     color: gray;
+    margin-left: 10px;
 
 }
 .box2 button{
@@ -101,7 +103,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 30px;
+    margin-right: 10px;
 
 }
 .box2 #lens{
@@ -452,10 +454,9 @@ h2{
 }
 .button-div{
     position: absolute;
-    right: 60px;
+    right: 20px;
     height: 70px;
     width: 90px;
-    
     background-color: rgb(255, 255, 255); 
     display: flex;
     align-items: center;
@@ -791,6 +792,10 @@ h2{
         grid-template-columns: repeat(2,50%);
         
     }
+    .button-div{
+        width: 40px;
+        right: 30px;
+    }
 }
 /* MOBILE */
 @media(max-width:425px){
@@ -940,6 +945,7 @@ h2{
     .arrow-button-zero-bg{
         right: 20px;
     }
+    
 }
 /* MOBILE medium screen */
 @media(max-width:375px){
